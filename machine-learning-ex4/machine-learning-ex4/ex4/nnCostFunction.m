@@ -85,7 +85,7 @@ Delta2 = 0;
 
 %BP
 d3 = a3 - Y;          % 5000*10
-d2 = (d3*Theta2).*[ones(size(z2,1),1) sigmoidGradient(z2)];     % has same dimensions as a2
+d2 = (d3*Theta2).*[ones(size(z2,1),1) sigmoidGradient(z2)]; % has same dimensions as a2
 
 D1 = d2(:,2:end)' * a1;    % has same dimensions as Theta1
 D2 = d3' * a2;    % has same dimensions as Theta2
